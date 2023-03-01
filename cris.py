@@ -6,7 +6,7 @@ app = Flask("gpt")
 @app.route("/chat")
 def send():
     prompt = request.values.get("prompt")
-    openai.api_key = "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"
+    openai.api_key = ""
     completions = openai.Completion.create(
     engine="text-davinci-003",
     prompt=prompt,
